@@ -13,6 +13,7 @@
 }
 
 .btn-reset {
+	color: var(--white-color);
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
