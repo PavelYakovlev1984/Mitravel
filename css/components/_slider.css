@@ -5,8 +5,7 @@
 	padding: 55px 0;
 }
 
-.swiper-slide {
-	background: #e3e3e3;
+.slider-container .swiper-slide {
 	border-radius: 8px;
 	min-height: 550px;
 	width: 890px;
@@ -19,7 +18,7 @@
 	justify-content: flex-end;
 }
 
-.swiper-slide::after {
+.slider-container .swiper-slide::after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -32,12 +31,12 @@
 	overflow: hidden;
 }
 
-.swiper-slide-active {
+.slider-container .swiper-slide-active {
 	transform: scaleX(1.16) scaleY(1.2);
 	transition: transform 0.3s;
 }
 
-.swiper-slide-active::after {
+.slider-container .swiper-slide-active::after {
 	opacity: 1;
 	transition: opacity 0.3s;
 }
