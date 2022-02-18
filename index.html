@@ -240,9 +240,7 @@
 
 				<section class="featured-videos">
 					<div class="container featured-videos__container">
-						<h2
-							class="featured-videos__title section-title section-title--center"
-						>
+						<h2 class="featured-videos__title section-title section-title--center">
 							Featured Videos
 						</h2>
 						<p class="featured-videos__descr">
@@ -284,9 +282,11 @@
 								</p>
 							</div>
 							<form class="newsletter__form subscribe-form" action="">
+								<input type="hidden" name="admin_email[]" value="pavel.yakovlev.1984@bk.ru">
+								<input type="hidden" name="form_subject" value="Матерьялы с сайта Miravel">
 								<input class="subscribe-form__field" type="text" name="name" placeholder="Name"></input>
-								<input class="subscribe-form__field" type="email" name="email" placeholder="Email"></input>
-								<input class="subscribe-form__field" type="tel" name="tel" placeholder="Phone Number"></input>
+								<input class="subscribe-form__field" type="email" name="email" placeholder="Email" data-validate-field="admin_email"></input>
+								<input class="subscribe-form__field" type="tel" name="tel" placeholder="Phone Number" data-validate-field="tel"></input>
 								<button class="btn btn-reset subscribe-form__btn">Sign Up Now</button>
 							</form>
 						</div>
@@ -409,7 +409,9 @@
 					<nav class="footer__column">
 						<h2 class="footer__title">Subscribe Now</h2>
 						<form class="subs-form" action="#">
-							<input class="subs-form__field" type="email" name="email" placeholder="Your email">
+							<input type="hidden" name="admin_email[]" value="pavel.yakovlev.1984@bk.ru">
+								<input type="hidden" name="form_subject" value="Матерьялы с сайта Miravel">
+							<input class="subs-form__field" type="email" name="email"  data-validate-field="tel" placeholder="Your email">
 							<button class="btn-reset btn subs-form__btn">Subscribe now</button>
 						</form>
 					</nav>
@@ -426,6 +428,8 @@
 			</footer>
 		</div>
 		<script src="libs/swiper.min.js"></script>
+		<script src="libs/inputmask.min.js"></script>
+		<script src="libs/just-validate.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
